@@ -3,7 +3,7 @@ provider "aws" {
   region = var.region
   profile = "default"
 }
-
+# Adds EC2 instance
 resource "aws_instance" "example" {
   ami = var.amis[var.region]
   instance_type = "t2.micro"
