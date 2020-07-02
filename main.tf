@@ -1,7 +1,7 @@
 provider "aws" {
   version = "~> 2.68"
   region  = var.region
-  profile = "default"
+  profile = var.profile
 }
 # Adds EC2 instance
 resource "aws_instance" "example" {
